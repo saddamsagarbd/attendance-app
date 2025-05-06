@@ -1,0 +1,102 @@
+id,name,emp_id,designation,department ,company_name,barcode,is_present
+414,Md. Abul Kalam Azad,1822,Sr. Manager,Billing,NREL,,0
+415,Md Rahat,2336,Assistant Manager,Billing,NREL,,0
+416,Md. Rasel Mahmud,1577,Assistant Manager,Billing,NREL,,0
+417,Md. Rejaul Karim,1831,Assistant Manager,Billing,NREL,,0
+418,Mohammad Tawsef Khan,1156,Senior Assistant Manager,Business Development,NREL,,0
+419,Md. Reazur Rahman,2549,Senior Deputy General Manager,Client Relations,NREL,,0
+420,Md Atiquzzaman Chowdhury,1113,Sr. Deputy Manager,Client Relations,NREL,,0
+421,Abul Kalam,2465,Assistant  Manager ,Client Relations,NREL,,0
+422,Md. Mazharul Islam,2527,Sr. Executive,Client Relations,NREL,,0
+423,Suprio Biswas,2526,Executive,Client Relations,NREL,,0
+424,Md. Abdul Mannan Mondol,1459, Assistant General Manager,Coordination,NREL,,0
+425,Md. Idris Ali,1475,Deputy Manager,Coordination,NREL,,0
+426,Sk. Rashik Refat,1946,Senior Executive,Credit Realization,NREL,,0
+427,M-Morshed Mokbul Mehedi,2280,Senior Executive,Credit Realization,NREL,,0
+428,Md. Tanvir Rahman,2145,Assistant Manager,Credit Realization,NREL,,0
+429,Md. Faraz Hossain Rumman,10060326,Dy. Manager,DBC,NREL,,0
+430,Md. Raihan Thalukder,20003454,Asst. Manager,DBC,NREL,,0
+431,Tahsin Billah,20003456,Executive,DBC,NREL,,0
+432,Hriday Sarker Basak (Neel),20003458,Executive,DBC,NREL,,0
+433,Jahidul Islam Rumman,20004013,Jr. Executive,DBC,NREL,,0
+434,Md. Masud Rana,1049,Sr. Assistant Manager,Design & Development,NREL,,0
+435,Rasel Md. Ibrahim,2198,Sr. Assistant Manager,Design & Development,NREL,,0
+436,Md. Alifuzzaman Khan,2559,Sr Executive,Design & Development,NREL,,0
+437,Mahir Chowdhury,2506,Executive,Design & Development,NREL,,0
+438,Md. Merazul Islam,1646,Asst.  Manager,Designo (Interior),NREL,,0
+439,Muhammad Salim Reza,2384,Senior Manager,Electrical,NREL,,0
+440,Md. Al Mamun,1944,Assistant Manager,Electrical,NREL,,0
+441,Brig.Gen. Md. Syeed Anwarul Islam (Retd.),2187,Chief Engineer,Engineering,NREL,,0
+442,Md. Shahjahan,1912,Assistant General Manager ,Engineering,NREL,,0
+443,Md. A. Bashed Shaiekh,2017,Sr. Project Manager ,Engineering,NREL,,0
+444,Sunil Chandra Mandal,1654,General Manager,Engineering,NREL,,0
+445,Md. Sadiqul Hasan,2027,Project Manager ,Engineering,NREL,,0
+446,Syed Tafazzal Hossain,1644,Manager (Survey),Engineering,NREL,,0
+447,Jayed Ahmed Khan,1513,Sr. Project Manager ,Engineering,NREL,,0
+448,Md. Kamrul Hassan,1677,Sr. Project Manager ,Engineering,NREL,,0
+449,Md. Shahidul Islam Chowdhury,2197,Project Manager ,Engineering,NREL,,0
+450,Syed Aminur Rahman,0145,Sr. Deputy General Manager ,Estate,NREL,,0
+451,Md. Mahmudul Karim,0177,Sr Manager,Estate,NREL,,0
+452,Jahangir Hossain ,2349,Manager ,Estate,NREL,,0
+453,Mohammed Moniruzzaman Munir,0578,Deputy   Manager,Estate,NREL,,0
+454,Md. Ekramul Hassan Khan,2265,Assistant Manager,Facilities & Maintenance,NREL,,0
+455,Farhan Shariar Hossain,2604,Executive,Facilities & Maintenance,NREL,,0
+456,Md. Mehadi Hassan Chowdhury,2629,Executive,Facilities & Maintenance,NREL,,0
+457,Masud Ahmed,0011,Sr. Assistant  General Manager ,Finance & Accounts,NREL,,0
+458,Mst. Ismita Begum,0951,Senior Assistant  Manager,Finance & Accounts,NREL,,0
+459,Mohammad Monjur Morshed Chowdhury,20004039,General Manager,Group Administration ,NREL,,0
+460,Farzana Yasmin,20003055,Head of HRBP & OC,Group Human Resources,NREL,,0
+461,Shanjida Islam,20004006,Senior Assistant Manager,Group Human Resources,NREL,,0
+462,Tahsina Taj,20002306,Assistant Manager,Group Human Resources,NREL,,0
+463,Anindita Touhid,20003278,Rewards Analyst,Group Human Resources,NREL,,0
+464,Mostafa Mia,10061265,Dy. Manager,Human Resources,NREL,,0
+465,Md. Akhtarul Islam (Renis),2337,Sr. Asst. Gen. Manager,IC&T,NREL,,0
+466,Md. Saddam Hossainm,2584,Assistant Manager,IC&T,NREL,,0
+467,Md.Sazzad Hossain,10600080,Asst.Manager,IC&T,NREL,,0
+468,Md.Abdullah Al Mamun,10720179,Lead System Engineer,IC&T,NREL,,0
+469,Rouza Miah,10305049,Senior Executive,IC&T,NREL,,0
+470,Shahinur Islam Shihab,10900252,Senior Executive,IC&T,NREL,,0
+471,Md. Saiful Islam,2446,Head of Internal Audit,Internal Audit,NREL,,0
+472,Md. Abu Bakar Siddiq Faisal,2565,Sr. Asst Manager,Internal Audit,NREL,,0
+473,Tarekul Islam,2420,Senior Executive ,Internal Audit,NREL,,0
+474,Nabil Sahmed Rakib,2503,Senior Executive ,Internal Audit,NREL,,0
+475,Zahidul Islam,2535,Senior Executive ,Internal Audit,NREL,,0
+476,Md. KamaL Hossain,2269,Assistant Manager,Inventory,NREL,,0
+477,Md. Afchar Ali,2588,Assistant Manager,Inventory,NREL,,0
+478,Mustaqul Hamid ,2466,Sr Deputy General Manager,Land Development,NREL,,0
+479,Rafiqull Alam,2412,Sr Deputy General Manager,Land Development,NREL,,0
+480,H.M.Ariful Islam Shujan,2217,Deputy  Manager,Land Development,NREL,,0
+481,Md Akramul Haque Shawon,2415,Executive,Land Development,NREL,,0
+482,Md. Moshiur Rahman,0213,Assistant  Manager,Logistics ,NREL,,0
+483,Md. Haidar Ali Sarder,0687,Sr. Deputy  Manager,Logistics ,NREL,,0
+484,Monir Ahmed Khan,2644,Head of Operations (GM),Operation (Brokerage ),NREL,,0
+485,Anisul Islam Khan,2464,Sr  Executive,Planning & Coordination,NREL,,0
+486,S. M. A Kasem,2383,Executive,Planning & Coordination,NREL,,0
+487,Md. Jaglul Haider,2296,General Manager,Procurement,NREL,,0
+488,Mohammad Shanjid Bakkar,2634,Deputy Manager,Procurement,NREL,,0
+489,T. M. Kudrate Khoda,1793,Deputy Manager,Procurement,NREL,,0
+490,Abu Sayem Md. Tauhiduzzaman,2423,Manager,Quality Assurance,NREL,,0
+491,A.S.M. Faisal,1309,Dy. Manager,Quality Assurance,NREL,,0
+492,Md. Nazrul Islam,0272,Senior General Manager,Sales,NREL,,0
+493,A.K.M. Khurshid Basar,0725,Senior Deputy  Manager ,Sales,NREL,,0
+494,Shamim Akhter Chowdhury,2091,Sr. Assistant  General  Manager,Sales,NREL,,0
+495,A.T.M Rezwanul Karim,1834,Sr Assistant Manager,Sales,NREL,,0
+496,Ajoy kumar Saha,2018,Assistant Manager,Sales,NREL,,0
+497,Md. Rashidul Islam,1980,Assistant Manager,Sales,NREL,,0
+498,Md. Mahadi Emran,1574,Assistant Manager,Sales,NREL,,0
+499,Md. Shafayet Hossain,1568,Assistant Manager,Sales,NREL,,0
+500,Belayet Hossain Mamun,1693,Assistant Manager,Sales,NREL,,0
+501,Md. Roknuzzaman,1697,Assistant Manager,Sales,NREL,,0
+502,Md Nazmul Alam,2300,Senior Executive,Sales,NREL,,0
+503,Sydea Alfi Runa,1852,Assistant Manager,Sales,NREL,,0
+504,Md. Mazharul Islam Khan ,1624,DGM,Sales (Land),NREL,,0
+505,Md. Enayet Hossen ,10061183,DGM ,Sales (Land),NREL,,0
+506,S.M. Farukuzzaman,1728,Senior Assistant Manager,Sales (Land),NREL,,0
+507,Mamunur Rashid,2329,Assistant Manager,Sales (Land),NREL,,0
+508,Tanvir Hasan Shakil ,10060323,Senior Executive,Sales (Land),NREL,,0
+509,Jam Jam Mahmud Sunny ,10060959,Senior Executive,Sales (Land),NREL,,0
+510,Rajib Shome ,10061233,Senior Executive,Sales (Land),NREL,,0
+511,Md. Sadman Sakib ,10061078, Executive,Sales (Land),NREL,,0
+512,Mosharrat Tanzin Fabin,2481,Executive,Tele Marketing,NREL,,0
+513,Yeasmin Akter,10061292,Executive,Tele Marketing,NREL,,0
+514,A K M Taufiqul Haque,2140,Senior Assistant Manager,VC's Office,NREL,,0
