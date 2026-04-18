@@ -1,24 +1,26 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Md. Saddam Hossain",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "description": "",
   "dependencies": {
     "archiver": "^7.0.1",
     "bwip-js": "^4.5.4",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "fs": "^0.0.1-security",
-    "mysql2": "^3.14.0",
+    "mysql2": "^3.22.1",
+    "nodemon": "^3.1.14",
     "path": "^0.12.7",
     "pdfkit": "^0.17.0"
   }
