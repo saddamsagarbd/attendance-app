@@ -1,20 +1,20 @@
 import pool from '../db.js';
 
-const createUser = async (empid, name, department, designation, sbu) => {
+const createUser = async (empid, name, designation, department, sbu) => {
     const [result] = await pool.execute(
-        'INSERT INTO users (emp_id, name, department, designation, sbu) VALUES (?, ?, ?, ?, ?)',
-        [empid, name, department, designation, sbu]
+        'INSERT INTO users (emp_id, name, designation, department, sbu) VALUES (?, ?, ?, ?, ?)',
+        [empid, name, designation, department, sbu]
     );
     return result.insertId;
 };
 
 const getAllUsers = async () => {
-    const [results] = await pool.execute('SELECT id, emp_id, name, designation, department, sbu, barcode FROM users');
+    const [results] = await pool.execute('SELECT id, emp_id, name, designation, department, sbu, barcode, is_present FROM users');
     return results;
 };
 
 const getAllAttendedUsers = async () => {
-    const [results] = await pool.execute('SELECT id, emp_id, name, designation, department, sbu FROM users WHERE is_present = 1');
+    const [results] = await pool.execute('SELECT id, emp_id, name, designation, department, sbu, barcode, is_present FROM users WHERE is_present = 1');
     return results;
 };
 
@@ -31,14 +31,14 @@ const getCompanywiseAttendance = async () => {
 
 const getAllUsersWithoutBarcode = async () => {
     const [results] = await pool.execute(
-        'SELECT id, emp_id, name, designation, department, sbu FROM users WHERE barcode IS NULL'
+        'SELECT id, emp_id, name, designation, department, sbu, barcode, is_present FROM users WHERE barcode IS NULL'
     );
     return results;
 };
 
 const getAllUsersWithBarcode = async () => {
     const [results] = await pool.execute(
-        'SELECT id, emp_id, name, designation, department, sbu, barcode FROM users WHERE barcode IS NOT NULL'
+        'SELECT id, emp_id, name, designation, department, sbu, barcode, is_present FROM users WHERE barcode IS NOT NULL'
     );
     return results;
 };
@@ -61,10 +61,10 @@ const markAttendance = async (userId) => {
 
 const getUserDetails = async (userId) => {
     const [result] = await pool.execute(
-        'SELECT id, emp_id, name, designation, department, sbu FROM users WHERE id = ?',
+        'SELECT id, emp_id, name, designation, department, sbu, barcode, is_present FROM users WHERE id = ?',
         [userId]
     );
-    return result[0];   // return single object instead of array
+    return result[0];
 };
 
 const UserModel = {

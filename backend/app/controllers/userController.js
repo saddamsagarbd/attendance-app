@@ -101,49 +101,51 @@ const createUserInternal = async(userData) => {
     }
 
     try {
-        const userId = await UserModel.createUser(emp_id, name, designation, department, sbu);
-        const barcodeText = `${emp_id}`;
-        const fileName = `barcode-${userId}.png`;
-        const filePath = join(barcodeDir, fileName);
 
-        const barcodeBuffer = await toBuffer({
-            bcid:        'code128',
-            text:        barcodeText,
-            scale:       3,
-            height:      10,
-            includetext: true,
-            textxalign:  'center',
-            textsize:    12
-        });
+        const user = await UserModel.getAllUsers();  // You can modify this to retrieve a user by barcode
+        const userId = user.find(u => u.emp_id === emp_id)?.id;
 
-        writeFileSync(filePath, barcodeBuffer);
+        console.log(userId);
 
-        const updatedUsers = [];
+        if (!userId) {
 
-        // Store the barcode file name in the database
-        await UserModel.updateBarcode(userId, fileName);
+            const userId = await UserModel.createUser(emp_id, name, designation, department, sbu);
+            const barcodeText = `${emp_id}`;
+            const fileName = `barcode-${userId}.png`;
+            const filePath = join(barcodeDir, fileName);
 
-        const user = await UserModel.getUserDetails(userId);
+            const barcodeBuffer = await toBuffer({
+                bcid:        'code128',
+                text:        barcodeText,
+                scale:       3,
+                height:      10,
+                includetext: true,
+                textxalign:  'center',
+                textsize:    12
+            });
 
-        // updatedUsers.push({
-        //     id: user.id,
-        //     emp_id: user.emp_id,
-        //     name: user.name,
-        //     sbu: user.sbu,
-        //     designation: user.designation,
-        //     department: user.department,
-        //     barcode: `${process.env.BASE_URL}/barcodes/${fileName}`
-        // });
+            writeFileSync(filePath, barcodeBuffer);
 
-        return {
-            id: user.id,
-            emp_id: user.emp_id,
-            name: user.name,
-            sbu: user.sbu,
-            designation: user.designation,
-            department: user.department,
-            barcode: `${process.env.BASE_URL}/barcodes/${fileName}`
-        };
+            const updatedUsers = [];
+
+            // Store the barcode file name in the database
+            await UserModel.updateBarcode(userId, fileName);
+
+            const user = await UserModel.getUserDetails(userId);
+
+            return {
+                id: user.id,
+                emp_id: user.emp_id,
+                name: user.name,
+                sbu: user.sbu,
+                designation: user.designation,
+                department: user.department,
+                barcode: `${process.env.BASE_URL}/barcodes/${fileName}`
+            };
+        }
+
+        
+        return res.status(404).json({ message: 'Error generating barcode' });
     } catch (err) {
         return { message: 'Error generating barcode', error: err.message };
     }
@@ -302,6 +304,7 @@ const getAttendedListC = async(req, res) => {
             sbu: user.sbu,
             designation: user.designation,
             department: user.department,
+            is_present: user.is_present,
             barcode: `${process.env.BASE_URL}/barcodes/${user.barcode}`
         })));
     } catch (err) {
@@ -329,11 +332,15 @@ const markAttendanceC = async(req, res) => {
         const user = await UserModel.getAllUsers();  // You can modify this to retrieve a user by barcode
         const userId = user.find(u => u.emp_id === barcode)?.id;
 
+        console.log(userId);
+
         if (!userId) {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        await UserModel.markAttendance(userId);
+        const rowAffected = await UserModel.markAttendance(userId);
+
+        console.log(`row affected: ${rowAffected}`);
 
         const result = await UserModel.getUserDetails(userId);
 
@@ -341,7 +348,7 @@ const markAttendanceC = async(req, res) => {
             return res.status(404).json({ isFound: false, message: 'User not found' });
         }
 
-        const userDetails = result[0];
+        const userDetails = result;
 
         res.json({
             message: 'Attendance marked successfully',
@@ -354,7 +361,7 @@ const markAttendanceC = async(req, res) => {
             isFound: true
         });
     } catch (err) {
-        res.status(500).json({ message: 'Error marking attendance', error: err });
+        res.status(500).json({ message: 'Error marking attendance', error: err.message });
     }
 }
 
